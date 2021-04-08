@@ -7,10 +7,6 @@ by achieving the best accuracy in estimating the polarization of social media us
 ## How to cite
 Belcastro, L., Cantini, R., Marozzo, F., Talia, D., & Trunfio, P. (2020). Learning political polarization on social media using neural networks. IEEE Access, 8, 47177-47187.
 
-
-CONTINUE...
-
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and 
@@ -26,25 +22,17 @@ testing purposes.
 - Install requirements
 ```
 pip install requirements.txt 
-python -m spacy download en_core_web_lg
 ```
 ### Use
-- Run the HASHET model
+- Run IOM-NN
 ```
-python run.py
+python twitter_opinion_miner.py
 ```
 
 ## Dataset
 
-The dataset available in the `input/` folder is a sample of 100 tweets which has the sole purpose of showing 
-the functioning of the methodology. Each tweet is a json formatted string.
-
-The real datasets on which HASHET has been validated are in the `used_dataset` folder.
-In accordance with Twitter API Terms, only Tweet IDs are provided as part of this datasets. 
-To recollect tweets based on the list of Tweet IDs contained in these datasets you will need to use tweet 
-'rehydration' programs.
-
-The resulting json line for each tweet after rehydration must have this format:
+The dataset available in the `input/` folder contains tweet collected from the state of Colorado before the 2016 US presidential elections.
+Each row represents a tweet and is a json strings formatted as follows:
 ```
 {
    "id":"id",
@@ -78,6 +66,5 @@ The resulting json line for each tweet after rehydration must have this format:
 
 ## Parameters
 `constants.py` contains all the parameters used in the methodology. Changing them will influence the obtained results.
-It is recommended to change `W2V_MINCOUNT` and `MINCOUNT` values for larger datasets.
 
 </div>
