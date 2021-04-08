@@ -1,0 +1,7 @@
+matplotlib==3.3.3
+tensorflow==2.4.0
+numpy==1.19.5
+imblearn==0.0
+keras==2.4.3
+pandas==1.2.3
+scikit_learn==0.24.1
