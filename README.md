@@ -31,8 +31,8 @@ python twitter_opinion_miner.py
 
 ## Dataset
 
-The available in the `input/` folder contains tweet collected from the state of Colorado before the 2016 US presidential elections.
-Unzip it in the `input/` folder before running IOM-NN. Each row of the dataset represents a tweet and is a json strings formatted as follows:
+The available dataset in the `input/` folder contains tweet collected from the state of Colorado before the 2016 US presidential elections.
+Unzip it into the `input/` folder before running IOM-NN. Each row of the dataset represents a tweet and is a json strings formatted as follows:
 ```
 {
    "id":"id",
